@@ -1,0 +1,1057 @@
+<!--Realizada para una resolución máx de 1280px-->
+<!--Desarrollado por Guillermo Lozano Osuna, 1ºDAM CES Cristo Rey (Granada)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Allie Grater .::. Guillermo Lozano</title>
+<link rel="icon" type="image/x-icon" href="images/fav.ico">
+<meta charset="UTF-8">
+<meta name="description" content="Proyecto Final del 2º Trimestre de Lenguajes de Marcas"/>
+<meta name="author" content="Guillermo Lozano Osuna" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+
+<!--Definición de estilos-->
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Lato, Verdana, sans-serif;
+}
+.full{
+  margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  max-width: 1280px;
+  background-image: url("images/fondo.png");
+  background-size: cover;
+}
+.container{
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  width: 860px;
+}
+.menu_superior{
+  display: flex;
+  flex-flow: nowrap;
+  align-items: center;
+  margin: auto;
+  margin-top: 40px;
+  width: 1060px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.alliegrater{
+  width: 260px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.link_menu{
+  width: 140px;
+  text-align: center;
+}
+.link_menu a, a:visited {
+  box-shadow: inset 0 0 0 0 #000000;
+  color: #000000;
+  margin: 0;
+  padding: 2px;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  text-decoration: none;
+}
+.link_menu a:hover {
+  box-shadow: inset 100px 0 0 0 #4A71F4;
+  color: white;
+}
+.link_menu_derecha{
+  width: 50px;
+  text-align: right;
+}
+.link_menu_derecha img{
+  max-width: 50px;
+}
+.hombre{
+  margin-top: 50px;
+}
+.hombre_img{
+  max-width: 100%;
+}
+.companias{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 110px;
+  align-items: center;
+  align-content: center;
+}
+.compania{
+  width: 170px;
+  text-align: center;
+}
+.companias_barra_horizontal{
+  width: 100%;
+  background-color: #F0EBEB;
+  height: 1px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.compania_barra{
+  padding-left: 1px;
+  height: 40px;
+  background-color: #F0EBEB;
+}
+.compania_img{
+  max-width: 100px;
+}
+.cantidad{
+  font-size: 28px;
+  font-weight: 800;
+}
+.companies{
+  font-size: 18px;
+  font-weight: 500;
+  color: #4A71F4;
+}
+.bio{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+.bio_texto{
+  width: 400px;
+  margin-top: 30px;
+}
+.bio_cuadros{
+  display: flex;
+  flex-wrap: wrap;
+  width: 460px;
+}
+.cuadro{
+  display: flex;
+  width: 220px;
+  height: 140px;
+  background-color: red;
+  align-content: center;
+  align-items: center;
+}
+.cuadro_numeros{
+  color: #FFFFFF;
+  width: 100%;
+  text-align: center;
+}
+.cuadro_numeros_numeros{
+  font-size: 30px;
+  font-weight: 800;
+  font-family: Montserrat;
+}
+.cuadro_numeros_texto{
+  font-size: 14px;
+  font-family: Montserrat;
+}
+#cuadro1{
+  background-color: #3CC6ED;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#cuadro1:hover{
+  background-color: #3bafed;
+}
+#cuadro2{
+  background-color: #4360A8;
+}
+#cuadro2:hover{
+  background-color: #4e67a3;
+}
+#cuadro3{
+  background-color: #FFB750;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#cuadro3:hover{
+  background-color: #ffbf63;
+}
+#cuadro4{
+  background-color: #FF8B6F;
+}
+#cuadro4:hover{
+  background-color: #ff9880;
+}
+.iam{
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 800;
+}
+.iamtext{
+  padding-top: 16px;
+  color: #777777;
+}
+#blue_text{
+  color: #4A71F4;
+}
+.reasons{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+.many_reasons{
+  margin-top: 50px;
+  width: 100%;
+  font-size: 36px;
+  font-family: Montserrat;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+.many_reasons_text{
+  width: 100%;
+  margin-top: 14px;
+  font-family: Roboto;
+  color: #777777;
+}
+.container_reason{
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.reason{
+  width: 340px;
+  height: 212px;
+  margin: 10px;
+  padding-top: 5px;
+  border-radius: 15px;
+  box-shadow: grey 0px 5px 12px;
+}
+.reason:hover{
+  box-shadow: #4A71F4 -10px -10px 0px;
+  border: solid 1px;
+}
+.reason_img{
+  margin-top: 20px;
+
+}
+.reason_img_max{
+  max-width: 40px;
+}
+.reason_title{
+  padding-top: 5px;
+  margin-top: 12px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.reason_text{
+  margin-top: 5px;
+  padding-top: 3px;
+  font-size: 14px;
+  font-family: Roboto;
+  color: #777777;
+}
+.vision{
+  margin-top: 150px;
+  width: 100%;
+  padding-top: 140px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  background-color: #4A71F4;
+  height: auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.vision_text{
+
+}
+.vision_text_grande{
+  color: #FFFFFF;
+  font-size: 36px;
+  font-family: Montserrat;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+.vision_text_mini{
+  padding-top: 14px;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 0;
+  font-family: Mulish;
+}
+.vision_image{
+  padding: 0;
+}
+.vision_image_atributos{
+  max-width: 560px;
+  padding: 0;
+}
+.bolita_atributos{
+  max-width: 70px;
+  padding-top: 14px;
+  padding-right: 16px;
+}
+.vision_text_video{
+  display: flex;
+  margin-top: 40px;
+  border-radius: 180px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #FFFFFF;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.vision_text_video a{
+  text-decoration: none;  
+}
+.vision_text_video a:hover{
+  text-decoration: none;
+}
+.vision_text_video:hover{
+  border: 3px solid #000000;
+  text-decoration: none;
+}
+.playvideo{
+  color: #FFFFFF;
+  font-family: Lato;
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+.trending{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 1060px;
+  margin: auto;
+}
+.trending_courses{
+  color: #000000;
+  font-size: 36px;
+  font-family: Montserrat;
+  font-weight: 800;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+.trending_text{
+  margin-top: 14px;
+  margin-bottom: 50px;
+  color: #777777;
+  text-align: center;
+  width: 100%;
+}
+.trending_cuadros{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.trending_division{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.trending_nueva{
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.cuadro_movil{
+  margin: 10px;
+  padding: 20px;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 550px;
+  border-radius: 15px;
+  align-items: flex-start;
+}
+.cuadro_movil_rojo{
+  background-color: #FF3F3F;
+  border-radius: 15px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  letter-spacing: 3px;
+}
+.cuadro_movil_foto{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+.cuadro_movil_foto_atributos{
+  max-width: 90%;
+}
+.cuadro_movil_texto{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.cuadro_movil_texto_negro{
+  color:  #000000;
+  font-size: 30px;
+  font-family: Lato;
+  font-weight: 700;
+}
+.cuadro_movil_texto_barra{
+  background-color: blue;
+  height: 2px;
+  width: 40px;
+  margin-right: 10px;
+}
+.cuadro_public{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 20px;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F5F5F5;
+  width: 100%;
+  height: 265px;
+  border-radius: 15px;
+  align-items: center;
+}
+.cuadro_public_mitad{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.public_img{
+  max-width: 100%;
+}
+.cuadro_public_texto{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.cuadro_public_texto_negro{
+  color:  #000000;
+  font-size: 20px;
+  font-family: Lato;
+  font-weight: 700;
+}
+.cuadro_public_texto_barra{
+  background-color: blue;
+  height: 2px;
+  width: 40px;
+  margin-right: 10px;
+}
+.cuadro_coding{
+  margin: 10px;
+  padding: 20px;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F5F5F5;
+  width: 50%;
+  height: 265px;
+  border-radius: 15px;
+  align-items: center;
+}
+.cuadro_video{
+  margin: 10px;
+  padding: 20px;
+  padding-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F5F5F5;
+  width: 50%;
+  height: 265px;
+  border-radius: 15px;
+  align-items: center;
+}
+.valuable{
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 800px;
+}
+.valuable_mitad1{
+  width: 50%;
+}
+.valuable_mitad2{
+  width: 50%;
+  padding-top: 100px;
+}
+.valuable_image{
+  max-width: 100%;
+}
+.valuable_text{
+  padding-top: 10px;
+  padding-left: 70px;
+  color: #777777;
+  font-size: 20px;
+  font-family: Lato;
+  line-height: 38px;
+}
+#john{
+  color: #000000;
+  font-size: 16px;
+  font-family: Lato;
+  font-weight: 600;
+}
+.trending_courses2{
+  color: #000000;
+  font-size: 36px;
+  font-family: Montserrat;
+  font-weight: 800;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+}
+.trending_text2{
+  margin-top: 14px;
+  margin-bottom: 0px;
+  color: #777777;
+  text-align: center;
+  width: 100%;
+}
+.mujer1{
+  width: 50%;
+  padding-left: 50px;
+  padding-top: 100px;
+}
+.mujer_foto{
+  max-width: 100%;
+}
+.mujer2{
+  padding-top: 210px;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.mujer2_i{
+  width: 70px;
+}
+.mujer2_d{
+  color: #000000;
+  font-size: 28px;
+  font-family: Montserrat;
+  font-weight: 800;
+  letter-spacing: 1px;
+  width: 330px;
+  text-align: left;
+
+}
+.texto_mujer{
+  padding-top: 10px;
+  color: #777777;
+  font-size: 12px;
+  text-align: left;
+  font-weight: 300;
+  font-family: Lato;
+}
+.bolita_atributos2{
+  max-width: 70px;
+  padding-top: 6px;
+  padding-right: 16px;
+}
+.botones{
+  display: flex;
+  flex-wrap: wrap;
+}
+.boton_mujer{
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-right: 10px;
+  margin-top: 50px;
+  width: 140px;
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+.boton_mujer:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.boton_d{
+  max-width: 80%;
+}
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #38424E;
+  justify-content: space-between;
+}
+.footer1{
+  width: 150px;
+}
+.elipse_footer1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+.footer3{
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  align-items: flex-end;
+}
+.footer3_caja_a{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.up{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  transform: rotate(-90deg);
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100px;
+  height: 80px;
+  align-items: center;
+  align-content: center;
+}
+.up a{
+  text-decoration: none;
+}
+.up a:active, a:hover{
+  text-decoration: none;
+}
+.up_texto{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: Lato, sans-serif;
+  color: #28D5FD;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+.up_bolita{
+  display: flex;
+  width: 30px;
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  font-family: Lato, sans-serif;
+  color: #000000;
+  font-size: 14px;
+  background-color: #28D5FD;
+  border-radius: 180px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-decoration: none;
+}
+.footer3_caja_b{
+  width: 100%;
+}
+.elipse_footer3{
+  max-width: 100%;
+  margin-top: 10px;
+}
+.footer2{
+  width: 860px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer_links{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 18px;
+  width: 100%;
+  font-family: Lato, sans-serif;
+  color: #FFFFFF;
+}
+.footer_barra{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: #777777;
+  height: 1px;
+}
+.footer_links_columna{
+  width: 25%;
+  font-family: Lato, sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+}
+.footer_links_columna a{
+  color: #FFFFFF;
+  text-decoration: none;
+
+}
+.footer_links_columna a:hover{
+  color: #28D5FD;
+}
+.footer_enlace{
+  margin: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 22px;
+}
+.footer_ultimo{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  align-content: center;
+}
+.ultimo1{
+  width: 33%;
+  font-family: Lato, sans-serif;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+.ultimo2{
+  width: 33%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.social{
+  margin: 10px;
+}
+.social_img{
+  max-width: 30px;
+}
+.ultimo3{
+  width: 33%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  font-family: Lato, sans-serif;
+  color: #FFFFFF;
+  font-size: 15px;
+}
+.ultimo3a a{
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.ultimo3a a:hover{
+  color: #28D5FD;
+}
+
+</style>
+</head>
+<body>
+<a name="top"></a>
+<div class="full">
+  <!----------------==========MENU===========-------------------->
+  <nav>
+    <div class="menu_superior">
+      <div class="alliegrater">Allie <span id="blue_text"> Grater</span></div>
+      <div class="link_menu"><a href="#about">About me</a></div>
+      <div class="link_menu"><a href="#services">Services</a></div>
+      <div class="link_menu"><a href="#blog">Blog</a></div> 
+      <div class="link_menu"><a href="#podcasts">Podcast</a></div>
+      <div class="link_menu"><a href="#video">Video</a></div>
+      <div class="link_menu_derecha"><a href="#"><img src="images/lupa.png"></a></div>
+      <div class="link_menu_derecha"><a href="#"><img src="images/usuario.png"></a></div>
+    </div>
+  </nav>
+  <div class="container">
+    <section>
+      <div class="hombre"><img class="hombre_img" alt="Imagen de un hombre" src="images/hombre.png"/></div>
+      <div class="companias">
+        <div class="companias_barra_horizontal"></div>
+        <div class="compania"><p class="cantidad">1.2K</p><p class="companies">Trusted Companies</p></div>
+        <div class="compania_barra"></div>
+        <div class="compania"><img class="compania_img" alt="Treva" src="images/treva.png"/></div>
+        <div class="compania"><img class="compania_img" alt="Hexa"  src="images/hexa.png"/></div>
+        <div class="compania"><img class="compania_img" alt="Transdev"  src="images/transdev.png"/></div>
+        <div class="compania"><img class="compania_img" alt="Circle"  src="images/circle.png"/></div>
+        <div class="companias_barra_horizontal"></div>
+      </div>
+    </section>
+    <!----------------==========I AM ALLIE...===========-------------------->
+    <section>
+    <a name="about"></a>
+      <div class="bio">
+        <div class="bio_texto">
+          <p class="iam">I am Allie <span id="blue_text">Grater</span><br>Bussines Consultant</p>
+          <p class="iamtext">I love working with startups and the businesses<br/>
+          looking to scale up. I’m a critical thinker and creative<br/>
+          problem solver. I am good at presenting business<br/>
+          ideas in a compelling and professional way.<br/></p>
+        </div>
+        <div class="bio_cuadros">
+          <div class="cuadro" id="cuadro1">
+            <div class="cuadro_numeros">
+              <div class="cuadro_numeros_numeros">1200</div>
+              <div class="cuadro_numeros_texto">Happy Clients</div>
+            </div>
+          </div>
+          <div class="cuadro" id="cuadro2">
+            <div class="cuadro_numeros">
+              <div class="cuadro_numeros_numeros">3500</div>
+              <div class="cuadro_numeros_texto">Finished Projects</div>
+            </div>
+          </div>
+          <div class="cuadro" id="cuadro3">
+            <div class="cuadro_numeros">
+              <div class="cuadro_numeros_numeros">12</div>
+              <div class="cuadro_numeros_texto">Years of Experience</div>
+            </div>
+          </div>
+          <div class="cuadro" id="cuadro4">
+            <div class="cuadro_numeros">
+              <div class="cuadro_numeros_numeros">25</div>
+              <div class="cuadro_numeros_texto">Awards Winning</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a name="services"></a>
+    <!----------------==========MANY REASONS TO CHOOSE US===========-------------------->
+    <section>
+      <div class="reasons">
+        <div class="many_reasons">Many <span id="blue_text">Reasons</span> to Choose us</div>
+        <div class="many_reasons_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Molestie a ac amet libero commodo, lectus pretium pretium suspendisse.<br>
+        Consectetur accumsan aliquet est, a. Ullamcorper nisi nunc sit.</div>
+        <div class="container_reason">
+          <div class="reason">
+            <div class="reason_img"><img class="reason_img_max" alt="Free Consultancy" src="images/free.png"></div>
+            <div class="reason_title">Free Consultancy</div>
+            <div class="reason_text">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Neque, morbi urna massa arcu.</div>
+          </div>
+          <div class="reason">
+            <div class="reason_img"><img class="reason_img_max" alt="Cost Effective" src="images/cost.png"></div>
+            <div class="reason_title">Cost Effective</div>
+            <div class="reason_text">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Neque, morbi urna massa arcu.</div>
+          </div>
+          <div class="reason">
+            <div class="reason_img"><img class="reason_img_max" alt="Topnotch on Ground" src="images/topnotch.png"></div>
+            <div class="reason_title">Topnotch on Ground</div>
+            <div class="reason_text">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Neque, morbi urna massa arcu.</div>
+          </div>
+          <div class="reason">
+            <div class="reason_img"><img class="reason_img_max" alt="Customer Satisfaction" src="images/satisfaction.png"></div>
+            <div class="reason_title">Customer Satisfaction</div>
+            <div class="reason_text">Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit.<br>Neque, morbi urna massa arcu.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <a name="blog"></a>
+  <!----------------==========VISION AND MISSION===========-------------------->
+  <div class="vision">
+    <clas class="vision_text"><img class="bolita_atributos" alt="Referenciador" src="images/bolita.png"></clas>
+    <div class="vision_text">
+      <div class="vision_text_grande">Vision & Mission</div>
+      <div class="vision_text_mini">The vision statement focuses on tomorrow and what the<br>
+        organization wants to become. The mission statement<br>
+        focuses on today and what the organization does. While<br>
+        companies commonly use mission and vision statements <br>
+        interchangeably, it’s important to have both.The vision<br>
+        statement focuses on tomorrow and what the organization<br>
+        wants to become. The mission statementfocuses on today<br>
+        and what the organization does. While companies commonly<br>
+        use mission and vision statements interchangeably, it’s<br>
+        important to have both.
+      </div>
+      <div class="vision_text_video"><a href="#"><div class="playvideo">PLAY VIDEO</div></a></div>
+    </div>
+    <div class="vision_image"><img class="vision_image_atributos" alt="Allie Grater" src="images/hombre2.png"></div>
+  </div>
+  <!----------------==========TRENDING COURSES===========-------------------->
+  <section>
+    <a name="podcasts"></a>
+    <div class="trending">
+      <div class="trending_courses"><img class="bolita_atributos" alt="Referenciador" src="images/bolita2.png"><span id="blue_text">Trending </span>Courses</div>
+      <div class="trending_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+      Molestie a ac amet libero commodo, lectus pretium pretium suspendisse.<br>
+      Consectetur accumsan aliquet est, a. Ullamcorper nisi nunc sit.
+      </div>
+      <div class="trending_cuadros">
+        <div class="trending_division">
+          <div class="cuadro_movil">
+            <div class="cuadro_movil_rojo">SALE</div>
+            <div class="cuadro_movil_foto"><img class="cuadro_movil_foto_atributos" alt="Digital Marketing" src="images/movil.png"></div>
+            <div class="cuadro_movil_texto">
+              <div class="cuadro_movil_texto_barra"></div>
+              <div class="cuadro_movil_texto_negro">Digital Marketing</div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="trending_division">
+          <div class="cuadro_public">
+              <div class="cuadro_public_mitad"><img class="public_img" alt="Public Speaking" src="images/public.png"></div>
+              <div class="cuadro_public_mitad">
+                <div class="cuadro_public_texto">
+                  <div class="cuadro_public_texto_barra"></div>
+                  <div class="cuadro_public_texto_negro">Public Speaking</div>
+                </div>
+              </div>
+          </div>
+          <div class="trending_nueva">
+            <div class="cuadro_coding">
+              <img class="public_img" alt="Coding Skills" src="images/coding.png">
+              <div class="cuadro_public_texto">
+                <div class="cuadro_public_texto_barra"></div>
+                <div class="cuadro_public_texto_negro">Coding Skills</div>
+              </div>
+            </div>
+            <div class="cuadro_video">
+              <img class="public_img" alt="Video Creator" src="images/creator.png">
+              <div class="cuadro_public_texto">
+                <div class="cuadro_public_texto_barra"></div>
+                <div class="cuadro_public_texto_negro">Video Creator</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------==========VALUABLE FEEDBACKS===========-------------------->
+    <section>
+      <a name="video"></a>
+      <div class="trending_courses2"><img class="bolita_atributos" alt="Referenciador" src="images/bolita2.png"><span id="blue_text">Valuable </span>Feedbacks</div>
+      <div class="trending_text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+      Molestie a ac amet libero commodo, lectus pretium pretium suspendisse.<br>
+      Consectetur accumsan aliquet est, a. Ullamcorper nisi nunc sit.
+      </div>
+      <div class="valuable">
+        <div class="valuable_mitad1"><img class="valuable_image" alt="Imagen mosaico" src="images/valuable.png"></div>
+        <div class="valuable_mitad2">
+          <img src="images/comillas.png" alt="Comillas">
+          <div class="valuable_text">
+            <p>Lorem ipsum dolor sit amet,<br>
+            consectetur adipiscing elit.Ut elit<br>
+            tellus, luctus nec ullamcorper mattis,<br>
+            pulvinar dapibus leo.Lorem ipsum<br>
+            dolor sit amet consectetur adipis-<br>
+            cing elit dolor<br>
+            <span id="john">John Deo</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------==========LEARN FROM ANYWHERE===========-------------------->
+    <section>
+      <div class="valuable">
+        <div class="mujer1"><img class="mujer_foto" alt="Mujer" src="images/mujer.png"></div>      
+        <div class="mujer2">
+          <div class="mujer2_i"><img class="bolita_atributos2" alt="Referenciador" src="images/bolita2.png"></div>
+          <div class="mujer2_d">Learn From <span id="blue_text">Anywhere</span></div>
+          <div class="mujer2_i"></div>
+          <div class="mujer2_d"><span id="blue_text">
+            <p class="texto_mujer">
+              Lorem ipsum dolor sit amet, consectetur adipiscing<br>
+              elit. Molestie a ac amet libero commodo, lectus pret-<br>
+              ium pretium suspendisse. Consectetur accumsan<br>
+              aliquet est, a. Ullamcorper nisi nunc sit.<br> 
+            </p>
+            <div class="botones">
+              <div class="boton_mujer"><img class="boton_d" alt="Apple" src="images/apple.png"></div>
+              <div class="boton_mujer"><img class="boton_d" alt="Google" src="images/google.png"></div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!----------------==========FOOTER===========-------------------->
+  <footer>
+    <div class="footer1"><img class="elipse_footer1" alt="Elipse del footer" src="images/elipse_izq.png"></div>
+    <div class="footer2">
+      <div class="footer_links">
+        <div class="footer_links_columna">
+          <div class="footer_enlace"><a href="#">About</a></div>
+          <div class="footer_enlace"><a href="#">Contact</a></div>
+          <div class="footer_enlace"><a href="#">Press</a></div>
+          <div class="footer_enlace"><a href="#">Blog</a></div>
+          <div class="footer_enlace"><a href="#">Podcast</a></div>
+        </div>
+        <div class="footer_links_columna">
+          <div class="footer_enlace"><a href="#">Go Premium</a></div>
+          <div class="footer_enlace"><a href="#">Team Plans</a></div>
+          <div class="footer_enlace"><a href="#">Refer a Friends</a></div>
+          <div class="footer_enlace"><a href="#">Gift Card</a></div>
+          <div class="footer_enlace"><a href="#">Scholarship</a></div>
+          <div class="footer_enlace"><a href="#">Event</a></div>
+        </div>
+        <div class="footer_links_columna">
+          <div class="footer_enlace"><a href="#">Book an Event</a></div>
+          <div class="footer_enlace"><a href="#">Become a Partner</a></div>
+          <div class="footer_enlace"><a href="#">Become a Sponser</a></div>
+        </div>
+        <div class="footer_links_columna">
+          <div class="footer_enlace">+77 3984 4455<br>+77 5245 5556</div>
+          <div class="footer_enlace">5th Floor, Groomland Park,<br>Paul Street, London EC2A 4MP</div>
+          <div class="footer_enlace"><a href="mailto:info@contactgrater.com">info@contactgrater.com</a></div>
+        </div>
+      </div>
+      <div class="footer_barra"></div>
+      <div class="footer_ultimo">
+        <div class="ultimo1">@2021, Alli Grater Inc.</div>
+        <div class="ultimo2">
+          <div class="social"><a href="#"><img class="social_img" src="images/facebook.png" alt="Facebook"></a></div>
+          <div class="social"><a href="#"><img class="social_img" src="images/twitter.png" alt="Twitter"></a></div>
+          <div class="social"><a href="#"><img class="social_img" src="images/linkedin.png" alt="Linkedin"></a></div>
+          <div class="social"><a href="#"><img class="social_img" src="images/instagram.png" alt="Instagram"></a></div>
+        </div>
+        <div class="ultimo3">
+          <div class="ultimo3a"><a href="#">Privacy</a></div>
+          <div class="ultimo3a"><a href="#">Accesibility</a></div>
+          <div class="ultimo3a"><a href="#">Terms</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer3">
+      <div class="footer3_caja_b">
+        <div class="footer3_caja_a">
+          <div class="up">
+            <div class="up_texto">UP</div>
+            <a href="#top"><div class="up_bolita">►</div></a>
+          </div>
+        </div>
+        <img class="elipse_footer3" alt="Elipse de footer" src="images/elipse_der.png"></div>
+    </div>
+  </footer>
+
+
+
+</div>
+</body>
+</html>
